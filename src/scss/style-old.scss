@@ -1,0 +1,133 @@
+// If you want to override variables do it here
+@import 'variables';
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import '@coreui/coreui/scss/coreui';
+
+// Import Chart.js custom tooltips styles
+@import '@coreui/chartjs/scss/coreui-chartjs';
+
+@import 'layout';
+@import 'example';
+
+// If you want to add custom CSS you can put it here.
+@import 'custom';
+
+.rc-pagination {
+  text-align: right;
+}
+
+.add-btn {
+  color: #0881ba !important;
+  border-color: #0881ba !important;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  float: right;
+}
+
+.add-btn:hover {
+  color: #ffffff !important;
+  border-color: #0881ba !important;
+  background-color: #0881ba !important;
+}
+
+.submit-btn {
+  background-color: #0881ba !important;
+  border-color: #0881ba !important;
+  box-shadow: none !important;
+  // margin-left: 85%;
+  float: right;
+}
+
+.submit-btn:hover {
+  background-color: #3897c4 !important;
+  border-color: #0881ba !important;
+  box-shadow: none !important;
+}
+
+.back-btn {
+  background-color: #0152ff !important;
+  border-color: #0152ff !important;
+  box-shadow: none !important;
+  // margin-left: 85%;
+  float: right;
+}
+
+.back-btn:hover {
+  background-color: #0767f7 !important;
+  border-color: #0767f7 !important;
+  box-shadow: none !important;
+}
+
+.edit-btn {
+  background-color: #3897c4 !important;
+  border-color: #3897c4 !important;
+  box-shadow: none !important;
+}
+
+.edit-btn:hover {
+  background-color: #3897c4 !important;
+  border-color: #0881ba !important;
+  box-shadow: none !important;
+}
+
+#btn {
+  margin-right: '30px';
+}
+
+.dispute_detail {
+  margin-left: 10px;
+}
+
+.margin_right {
+  margin-right: 10px;
+}
+
+.btn {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid rgb(36, 1, 1);
+  border-color: rgba(11, 12, 12, 0.142) transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.table-responsive thead th {
+  white-space: nowrap;
+}

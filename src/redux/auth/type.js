@@ -1,0 +1,4 @@
+// Current User
+export const SET_CURRENT_USER = 'SET_CURRENT_USER'
+
+export const SET_AUTHENTICATION = 'SET_AUTHENTICATION'
